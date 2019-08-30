@@ -1,0 +1,50 @@
+body {
+    background: #CEC8CB;
+}
+.pagelink{
+  background: red;
+  border: 1px solid red;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;  
+  margin: 5px 10px;
+}
+.header {
+    text-align: center; 
+}
+.disclaimer {
+    color:black;
+    font-weight: 200;
+}
+.mercedes {
+color:cyan;
+}
+.ferrari {
+    color: red;
+}
+.redbull {
+    color: darkblue;
+}
+.haas {
+    color: black;
+}
+.renault {
+    color: yellow;
+}
+.racingpoint {
+    color: pink;
+}
+.mclaren {
+    color:orange;
+}
+.tororosso {
+    color:blue;
+}
+.alfaromeo {
+    color: darkred;
+}
+.williams {
+    color:lightcyan;
+}
