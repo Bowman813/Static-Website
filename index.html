@@ -1,98 +1,216 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Formula 1 Info</title>
-        <link href='./index.css' rel='stylesheet' type='text/css' />
-    </head>
-    <body>
-        <div class='header'></div>
-            <img src='images/f1-logo-2017.png' height= 200 width- 300 align='right' />
-        <h1> Formula 1 Info </h1>
-        <p> Formula 1 is racings top sport and is the top league
-            out of all other Formula's. 
-        </p>
-        <table>
-            <tr>
-                <td class= 'pagelink'><a href='./currentseason.html'>Current Season</a></th>
-                <td class= 'pagelink'><a href='./lastseason.html'>Last Season</a></th>
-                <td class= 'pagelink'><a href='./tyrecompounds.html'>Tyre Compounds</a></th>
-                <td class= 'pagelink'><a href='./f1legends.html'>Formula 1 Legends</a></th>
-            </tr>
-        </table>
+<html lang='en'>
+
+<head>
+    <title>Formula 1 Info</title>
+    <link href='./index.css' rel='stylesheet' type='text/css' />
+    <link href='./normalize.css' rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <div id='f1logo'>
+            <img class='logo' src='images/f1-logo-2017.png' height=200 width- 300 />
         </div>
-        <div class='middle'>
-        <h3>Teams</h3>
-        <p class='disclaimer'>*These are the teams competing in the 2019 season 
-            and may change in the future*</p>
-        <ul>
-            <li class='mercedes'>Mercedes</li>
-            <img src='images/Teams/mercedesf1.jpg' height=300 width=500 />
-            <br>
-            <br>
-            <li class='ferrari'>Ferrari</li>
-            <img src='images/Teams/ferrarif1.jpg' height=300 width=500/>
-            <br>
-            <br>
-            <li class='redbull'>Red bull Honda</li>
-            <img src='images/Teams/redbullf1.jpg' height=300 width=500/>
-            <br>
-            <br>
-            <li class='haas'>Haas Ferrari</li>
-            <img src='images/Teams/hassf1.jpg' height=300 width=500/>
-            <br>
-            <br>
-            <li class='renault'>Renault</li>
-            <img src='images/Teams/renaultf1.jpg'height=300 width=500/>
-            <br>
-            <br>
-            <li class='racingpoint'>Racing Point Mercedes</li>
-            <img src='images/Teams/racingpointf1.jpg' height=300 width=500/>
-            <br>
-            <br>
-            <li class='mclaren'>Mclaren Renault</li>
-            <img src='images/Teams/mclarenf1.jpg' height=300 width=500/>
-            <br>
-            <br>
-            <li class='tororosso'>Toro Rosso Honda</li>
-            <img src='images/Teams/tororossof1.jpg' height=300 width=500/>
-            <br>
-            <br>
-            <li class='alfaromeo'>Alfa Romeo Ferrari</li>
-            <img src='images/Teams/alfaromeof1.jpg' height=300 width=500/>
-            <br>
-            <br>
-            <li class='williams'>Wlliams Mercedes</li>
-            <img src='images/Teams/williamsf1.jpg' height=300 width=500/>
-            <br>
-            <br>
-        </ul>
-        </div>
-        <h3>Circuits</h3>
-        <p class='disclaimer'>*These are the circuits that are being used for the 2019 season
-            and in the future may no longer be used and be replaced*
+
+        <h1 align='center'> Formula 1 Info </h1>
+        <p align='center'> Formula 1 is racings top sport and is the top league out of all other Formula's.
         </p>
-        <ol>
-            <li>Autralian Grand Prix - Albert Park Circuit</li>
-            <li>Bahrain Grand Prix - Bahrain International Circuit</li>
-            <li>Chinese Grand Prix - Shanghai International Circuit</li>
-            <li>Azerbaijan Grand Prix - Baku City Circuit</li>
-            <li>Spanish Grand Prix - Circuit de Catalunya</li>
-            <li>Monaco Grand Prix - Circuit de Monaco</li>
-            <li>Candian Grand Prix - Circuit Gilles Villeneuve</li>
-            <li>French Grand Prix - Circuit Paul Ricard</li>
-            <li>Austrian Grand Prix - Red Bull Ring</li>
-            <li>British Grand Prix - Silverstone Circuit</li>
-            <li>German Grand Prix - Hockenheimring</li>
-            <li>Hungarian Grand Prix - Hungaroring</li>
-            <li>Belgian Grand Prix - Circuit de Spa Francorchamps</li>
-            <li>Italian Grand Prix - Autrodromo Nazionale di Monza</li>
-            <li>Singapore Grand Prix - Marina Bay Street Circuit</li>
-            <li>Russian Grand Prix - Sochi Autodrom</li>
-            <li>Japanese Grand Prix - Suzuka Circuit</li>
-            <li>Mexican Grand Prix - Autodromo Hermanos Rodriguez</li>
-            <li>United States Grand Prix - Circuit of the Americas</li>
-            <li>Brazilian Grand Prix - Autodrom de Interlagos</li>
-            <li>Abu Dhabi Grand Prix - Yas Marina Circuit</li>
-        </ol>
-    </body>
+        <nav>
+            <div class='nav'>
+                <div class='container'>
+                    <ul align='center'>
+                        <a href='./index.html'>
+                            <li>Home</li>
+                            <a href='./currentseason.html' role="button">
+                                <li>Current Season</li>
+                            </a>
+                            <a href='./lastseason.html' role="button">
+                                <li>Last Season</li>
+                            </a>
+                            <a href='./f1legends.html' role="button">
+                                <li>Formula 1 Legends</li>
+                            </a>
+                            <div class="dropdown">
+                                <button class="dropbtn">Tyre Types
+                                        </button>
+                                <div class="dropdown-content">
+                                    <a href="./tyrecompounds.html">Dry Tyre Types</a>
+                                    <a href="./wettyres.html">Wet Tyre Types</a>
+                                    <a href="./oldtyresystem.html">Old Tyre System</a>
+                                </div>
+                            </div>
+
+
+
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main>
+        <section>
+            <article>
+                <h3 align='center'>Teams</h3>
+                <p class='disclaimer' align='center'>*These are the teams competing in the 2019 season and may change in the future*</p>
+
+                <div class="flex-container">
+                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /></div>
+                    <div class="flex-item"><img src='./images/Teams/mercedesf1.jpg' height=300 width=500 /></div>
+                    <div class="flex-item text">
+                        Mercedes-AMG Petronas Motorsport is the most successful team in the hybrid formula 1 car era with winning the last five World Constructors Championship and are in a fantastic possition to add a 6th. They're also known by their nickname "The Silver Arrows".
+                    </div>
+                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /></div>
+                </div>
+                <div class="flex-container">
+                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                    <div class="flex-item text">
+                        Scuderia Ferrari is the oldest surviving and most successful Formula One team, having competed in every world championship since the 1950 Formula One season. The team was founded by Enzo Ferrari, initially to race cars produced by Alfa Romeo, though by
+                        1947 Ferrari had begun building its own cars.</div>
+                    <div class="flex-item"><img src='./images/Teams/ferrarif1.jpg' height=300 width=500 /></div>
+                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                </div>
+                <div class="flex-container">
+                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /></div>
+                    <div class="flex-item"><img src='./images/Teams/redbullf1.jpg' height=300 width=500 /></div>
+                    <div class="flex-item text">
+                        Origins. The current Red Bull team can trace its origins back to the Stewart Grand Prix outfit that made its debut in 1997. Jackie Stewart sold his team to the Ford Motor Company late in 1999, and Ford made the decision to rebrand the team Jaguar Racing,
+                        with little subsequent success over the next five years. However, recently they have found success with drivers such as Sebastian Vettel and Max Verstappen.</div>
+                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                </div>
+                <div class="flex-container">
+                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                    <div class="flex-item text">
+                        Haas F1 Team debuted in the FIA Formula One World Championship in 2016, becoming the first American-led Formula One team since 1986. Founded by industrialist Gene Haas, Haas F1 Team is based in the United States on the same Kannapolis, North Carolina,
+                        campus as his championship-winning NASCAR team, Stewart-Haas Racing.</div>
+                    <div class="flex-item"><img src='./images/Teams/hassf1.jpg' height=300 width=500 /></div>
+                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                </div>
+                <div class="flex-container">
+                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                    <div class="flex-item"><img src='./images/Teams/renaultf1.jpg' height=300 width=500 /></div>
+                    <div class="flex-item text">
+                        The history of the team acquired by Renault started in 1981 as the Toleman Motorsport team, based in Witney, Oxfordshire, England. In 1986 the team was renamed to Benetton Formula, following its purchase in 1985 by the Benetton family. In 1992/3 the team
+                        moved a few miles to a new base in Enstone.</div>
+                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+
+                </div>
+                <div class="flex-container">
+                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                    <div class="flex-item text">
+                        Racing Point Force India Formula One Team was the team that Racing Point UK made a late entry into the 2018 Formula One World Championship with. The team used the constructor name "Force India", competed under a British licence and was based in Silverstone,
+                        United Kingdom. The team was formed in August 2018 when investors purchased the assets of Sahara Force India F1 team, which was operating under administration. The consortium of investors included André Desmarais, Jonathan Dudman,
+                        John D. Idol, John McCaw Jr., Michael de Picciotto and Silas Chou named Racing Point UK Ltd. and were led by Lawrence Stroll, the father of then-Williams F1 driver Lance Stroll. The team made its competitive debut at the 2018 Belgian
+                        Grand Prix. The team was renamed in February 2019 as Racing Point F1 Team</div>
+                    <div class="flex-item"> <img src='./images/Teams/racingpointf1.jpg' height=300 width=500 /></div>
+                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                </div>
+                <div class="flex-container">
+                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                    <div class="flex-item"><img src='./images/Teams/mclarenf1.jpg' height=300 width=500></div>
+                    <div class="flex-item text">
+                        Originally known as Bruce McLaren Motor Racing, McLaren was founded by New Zealand F1 driver Bruce McLaren in 1963, making their grand prix debut at the 1966 Monaco Grand Prix. They were the first team to construct a car around a carbon fibre monacoque,
+                        a process now commonplace in most forms of motorsport.</div>
+                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                </div>
+                <div class="flex-container">
+                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                    <div class="flex-item text">
+
+                        The team was established after Paul Stoddart sold his remaining interest in the Minardi team at the end of 2005 to Red Bull's owner, Dietrich Mateschitz and Minardi was renamed Toro Rosso. ... Vitantonio Liuzzi scored the team's first point in its first
+                        season at the 2006 United States Grand Prix.</div>
+                    <div class="flex-item"> <img src='./images/Teams/tororossof1.jpg' height=300 width=500></div>
+                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                </div>
+                <div class="flex-container">
+                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                    <div class="flex-item"><img src='./images/Teams/alfaromeof1.jpg' height=300 width=500></div>
+                    <div class="flex-item text"> Autodelta, Marlboro and Benetton Team Alfa Romeo (1979–1985). During 1977, and after some persuasion by Chiti, Alfa Romeo gave Autodelta permission to start developing a Formula One car on their behalf. Thus named the Alfa Romeo 177,
+                        the car made its debut at the 1979 Belgian Grand Prix. They then made their return in 2018 as partners with Sauber until making their full return in 2019.</div>
+                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                </div>
+                <div class="flex-container">
+                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                    <div class="flex-item text">
+
+                        The team was formed in 1977 after Frank Williams's two earlier unsuccessful F1 operations: Frank Williams Racing Cars (1969 to 1975) and Wolf–Williams Racing (1976). Williams started manufacturing its own cars the following year, and Switzerland's Clay
+                        Regazzoni won Williams's first race at the 1979 British Grand Prix.</div>
+                    <div class="flex-item"> <img src='./images/Teams/williamsf1.jpg' height=300 width=500></div>
+                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                </div>
+
+            </article>
+
+            <article class='article-background'>
+                <h3 align='center'>Circuits</h3>
+                <p class='disclaimer' align='center'>*These are the circuits that are being used for the 2019 season and will change in the future with the German Grand Grix being withdrawn and the Dutch and Vietnamese Grands Prix being added for 2020*
+                </p>
+                <ol align='center'>
+                    <li>Autralian Grand Prix - Albert Park Circuit</li>
+                    <li>Bahrain Grand Prix - Bahrain International Circuit</li>
+                    <li>Chinese Grand Prix - Shanghai International Circuit</li>
+                    <li>Azerbaijan Grand Prix - Baku City Circuit</li>
+                    <li>Spanish Grand Prix - Circuit de Catalunya</li>
+                    <li>Monaco Grand Prix - Circuit de Monaco</li>
+                    <li>Candian Grand Prix - Circuit Gilles Villeneuve</li>
+                    <li>French Grand Prix - Circuit Paul Ricard</li>
+                    <li>Austrian Grand Prix - Red Bull Ring</li>
+                    <li>British Grand Prix - Silverstone Circuit</li>
+                    <li>German Grand Prix - Hockenheimring</li>
+                    <li>Hungarian Grand Prix - Hungaroring</li>
+                    <li>Belgian Grand Prix - Circuit de Spa Francorchamps</li>
+                    <li>Italian Grand Prix - Autrodromo Nazionale di Monza</li>
+                    <li>Singapore Grand Prix - Marina Bay Street Circuit</li>
+                    <li>Russian Grand Prix - Sochi Autodrom</li>
+                    <li>Japanese Grand Prix - Suzuka Circuit</li>
+                    <li>Mexican Grand Prix - Autodromo Hermanos Rodriguez</li>
+                    <li>United States Grand Prix - Circuit of the Americas</li>
+                    <li>Brazilian Grand Prix - Autodrom de Interlagos</li>
+                    <li>Abu Dhabi Grand Prix - Yas Marina Circuit</li>
+                </ol>
+            </article>
+        </section>
+    </main>
+</body>
+<footer>
+    <nav>
+        <div class='nav'>
+            <div class='container'>
+                <ul align='center'>
+                    <a href='./index.html'>
+                        <li>Home</li>
+                        <a href='./currentseason.html' role="button">
+                            <li>Current Season</li>
+                        </a>
+                        <a href='./lastseason.html' role="button">
+                            <li>Last Season</li>
+                        </a>
+                        <a href='./f1legends.html' role="button">
+                            <li>Formula 1 Legends</li>
+                        </a>
+                        <div class="dropdown">
+                            <button class="dropbtn">Tyre Types
+                                    </button>
+                            <div class="dropdown-content">
+                                <a href="./tyrecompounds.html">Dry Tyre Types</a>
+                                <a href="./wettyres.html">Wet Tyre Types</a>
+                                <a href="./oldtyresystem.html">Old Tyre System</a>
+                            </div>
+                        </div>
+
+
+
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+</footer>
+
 </html>

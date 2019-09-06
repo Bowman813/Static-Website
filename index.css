@@ -1,50 +1,115 @@
 body {
     background: #CEC8CB;
 }
-.pagelink{
-  background: red;
-  border: 1px solid red;
-  border-radius: 3px;
-  color: white;
-  display: inline-block;
-  text-decoration: none;
-  padding: 10px;  
-  margin: 5px 10px;
+
+.pagelink {
+    background: red;
+    border: 1px solid red;
+    border-radius: 3px;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 10px;
 }
+
+#f1logo {
+    position: relative;
+}
+
+#f1logo img {
+    position: absolute;
+    top: -65px;
+    right: 0px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 940px;
+    padding: 0 10px;
+}
+
+.nav {
+    background: red;
+    height: 80px;
+    width: 100%;
+}
+
 .header {
-    text-align: center; 
+    text-align: center;
 }
+
 .disclaimer {
-    color:black;
+    color: black;
     font-weight: 200;
 }
+
 .mercedes {
-color:cyan;
+    color: cyan;
 }
+
 .ferrari {
     color: red;
 }
+
 .redbull {
     color: darkblue;
 }
+
 .haas {
     color: black;
 }
+
 .renault {
     color: yellow;
 }
+
 .racingpoint {
     color: pink;
 }
+
 .mclaren {
-    color:orange;
+    color: orange;
 }
+
 .tororosso {
-    color:blue;
+    color: blue;
 }
+
 .alfaromeo {
     color: darkred;
 }
+
+.article-background {
+    background-image: url('');
+    background-repeat: no-repeat;
+}
+
+h3 {
+    padding: 5px;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace
+}
+
+p .disclaimer {
+    padding: 5px;
+}
+
+#desc {
+    font-size: small;
+}
+
+h1,
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+div .text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
 .williams {
-    color:lightcyan;
+    color: lightcyan;
 }
