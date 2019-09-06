@@ -1,14 +1,3 @@
-.pagelink {
-    background: red;
-    border: 1px solid red;
-    border-radius: 3px;
-    color: white;
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px;
-    margin: 5px 10px;
-}
-
 #f1logo {
     position: relative;
 }
@@ -61,6 +50,20 @@ body {
 
 .header {
     text-align: center;
+}
+
+.flex-container {
+    padding: 0;
+    margin: 20px 20px;
+    list-style: none;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    overflow-wrap: break-word;
 }
 
 
@@ -123,53 +126,4 @@ body {
 
 .dropdown:hover .dropbtn {
     background-color: black;
-}
-
-.flex-container {
-    padding: 0;
-    margin: 0 20px;
-    list-style: none;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    overflow-wrap: break-word;
-}
-
-
-/*div {
-    border: 2px solid blue;
-}*/
-
-.article-background {
-    background-image: url('');
-    background-repeat: no-repeat;
-}
-
-h3 {
-    padding: 5px;
-}
-
-p {
-    font-family: 'Courier New', Courier, monospace
-}
-
-p .disclaimer {
-    padding: 5px;
-}
-
-#desc {
-    font-size: small;
-}
-
-h1,
-h3 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-
-div .text {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
