@@ -9,7 +9,12 @@
 }
 
 body {
-    background: white;
+    background-color: black;
+}
+
+#heading,
+#subheading {
+    color: white;
 }
 
 .container {
@@ -127,3 +132,58 @@ body {
 .dropdown:hover .dropbtn {
     background-color: black;
 }
+
+div .text {
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+}
+
+#wet-tyre-info {
+    background-color: black;
+    margin: 0;
+    padding: 5px;
+}
+
+div .wets {
+    border: 5px solid blue;
+}
+
+div .inters {
+    border: 5px solid green;
+}
+
+div .invis {
+    color: black;
+}
+
+h3 {
+    padding: 5px;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace
+}
+
+p .disclaimer {
+    padding: 5px;
+}
+
+#desc {
+    font-size: smaller
+}
+
+h1,
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+div .text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+
+/*div {
+    border: 2px solid pink;
+}*/

@@ -8,8 +8,13 @@
     right: 0px;
 }
 
+#heading,
+#subheading {
+    color: white;
+}
+
 body {
-    background: white;
+    background: black;
 }
 
 .container {
@@ -126,4 +131,63 @@ body {
 
 .dropdown:hover .dropbtn {
     background-color: black;
+}
+
+div .text {
+    color: white;
+    margin: 5px;
+    padding: 5px;
+}
+
+div .super-hards {
+    border: 5px solid orange;
+}
+
+div .hards {
+    border: 5px solid rgb(75, 198, 255);
+}
+
+div .mediums {
+    border: 5px solid white;
+}
+
+div .softs {
+    border: 5px solid yellow;
+}
+
+div .super-softs {
+    border: 5px solid red;
+}
+
+div .ultra-softs {
+    border: 5px solid purple;
+}
+
+div.hyper-softs {
+    border: 5px solid pink;
+}
+
+h3 {
+    padding: 5px;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace
+}
+
+p .disclaimer {
+    padding: 5px;
+}
+
+#desc {
+    font-size: smaller
+}
+
+h1,
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+div .text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }

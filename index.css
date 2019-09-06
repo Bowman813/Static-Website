@@ -1,3 +1,14 @@
+.pagelink {
+    background: red;
+    border: 1px solid red;
+    border-radius: 3px;
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 10px;
+}
+
 #f1logo {
     position: relative;
 }
@@ -128,12 +139,37 @@ body {
     overflow-wrap: break-word;
 }
 
-.article-background {
-    background-image: url('./images/seamless_19_lavatest.png');
-    color: white;
-}
-
 
 /*div {
     border: 2px solid blue;
 }*/
+
+.article-background {
+    background-image: url('');
+    background-repeat: no-repeat;
+}
+
+h3 {
+    padding: 5px;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace
+}
+
+p .disclaimer {
+    padding: 5px;
+}
+
+#desc {
+    font-size: small;
+}
+
+h1,
+h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+div .text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}

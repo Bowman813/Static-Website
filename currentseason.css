@@ -127,3 +127,32 @@ body {
 .dropdown:hover .dropbtn {
     background-color: black;
 }
+
+div .honorable-mentions {
+    text-align: center;
+}
+
+h3 {
+    padding: 5px;
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace
+}
+
+p .disclaimer {
+    padding: 5px;
+}
+
+#desc {
+    font-size: smaller
+}
+
+h1,
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+div .text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
