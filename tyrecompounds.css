@@ -155,7 +155,7 @@ div .c1 {
 }
 
 div .c2 {
-    border-bottom: white;
+    border-bottom: yellow;
     border-left-color: white;
     border-right: yellow;
     border-top: yellow;
@@ -168,11 +168,16 @@ div .desc-background {
 }
 
 div .c3 {
-    border: 5px solid yellow;
+    border-bottom: white;
+    border-left-color: yellow;
+    border-right: yellow;
+    border-top: red;
+    border-width: 5px;
+    border-style: solid;
 }
 
 div .c4 {
-    border-bottom: red;
+    border-bottom: yellow;
     border-left-color: yellow;
     border-right: red;
     border-top: yellow;
