@@ -185,6 +185,7 @@ div .text {
 
 #wet-tyres {
     animation: rotation-wets 2.5s linear;
+    animation-delay: 0.5s;
 }
 
 @keyframes rotation-wets {
@@ -198,6 +199,7 @@ div .text {
 
 #inter-tyres {
     animation: rotation-inters 2.5s linear;
+    animation-delay: 0.5s;
 }
 
 @keyframes rotation-inters {
