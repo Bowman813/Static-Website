@@ -151,13 +151,18 @@ div .text {
 }
 
 div .c1 {
-    border: 5px solid white;
+    border-bottom: black;
+    border-left-color: black;
+    border-right: black;
+    border-top: white;
+    border-width: 5px;
+    border-style: solid;
 }
 
 div .c2 {
-    border-bottom: white;
+    border-bottom: black;
     border-left-color: white;
-    border-right: yellow;
+    border-right: white;
     border-top: yellow;
     border-width: 5px;
     border-style: solid;
@@ -168,20 +173,30 @@ div .desc-background {
 }
 
 div .c3 {
-    border: 5px solid yellow;
+    border-bottom: white;
+    border-left-color: yellow;
+    border-right: yellow;
+    border-top: red;
+    border-width: 5px;
+    border-style: solid;
 }
 
 div .c4 {
-    border-bottom: red;
-    border-left-color: yellow;
+    border-bottom: yellow;
+    border-left-color: red;
     border-right: red;
-    border-top: yellow;
+    border-top: black;
     border-width: 5px;
     border-style: solid;
 }
 
 div .c5 {
-    border: 5px solid rgb(255, 0, 0);
+    border-bottom: red;
+    border-left-color: black;
+    border-right: black;
+    border-top: black;
+    border-width: 5px;
+    border-style: solid;
 }
 
 h3 {
@@ -189,7 +204,8 @@ h3 {
 }
 
 p {
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
 }
 
 p .disclaimer {
@@ -197,14 +213,14 @@ p .disclaimer {
 }
 
 #desc {
-    font-size: smaller
+    font-size: smaller;
 }
 
 h1,
 h3 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 div .text {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
