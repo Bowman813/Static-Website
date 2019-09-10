@@ -186,6 +186,7 @@ div .text {
 #wet-tyres {
     animation: rotation-wets 2.5s linear;
     animation-delay: 0.5s;
+    animation-direction: alternate;
 }
 
 @keyframes rotation-wets {
@@ -200,6 +201,7 @@ div .text {
 #inter-tyres {
     animation: rotation-inters 2.5s linear;
     animation-delay: 0.5s;
+    animation-direction: alternate;
 }
 
 @keyframes rotation-inters {
@@ -211,7 +213,8 @@ div .text {
     }
 }
 
-#tyres {
+
+/*#tyres {
     animation-name: moving-tyres;
     animation-duration: 2.5s;
     animation-direction: alternate
@@ -233,7 +236,7 @@ div .text {
     100% {
         left: 400px;
     }
-}
+}*/
 
 
 /*div {
