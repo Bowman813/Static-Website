@@ -11,12 +11,18 @@
 <body>
     <header>
         <div id='f1logo'>
+
             <a href='https://www.formula1.com/' target='_blank'><img class='logo' src='images/f1-logo-2017.png' height=200 width- 300 /></a>
+
         </div>
 
-        <h1 align='center'> Current Season Info </h1>
-        <p align='center'>This is the most up to date information of the current season (2019)
+        <h1 align='center' id='title'> Current Season Info </h1>
+        <p align='center' id='subtitle'>This is the most up to date information of the current season (2019)
         </p>
+        <script>
+            document.getElementById("title").innerHTML = "Current Season";
+            document.getElementById("subtitle").innerHTML = "Drivers Standings and Constructors Standings plus honorable moments for the current season";
+        </script>
         <nav>
             <div class='nav'>
                 <div class='container'>
