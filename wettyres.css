@@ -144,14 +144,20 @@ div .text {
     background-color: black;
     margin: 0;
     padding: 5px;
+    align-content: flex-start
 }
 
 div .wets {
     border: 5px solid blue;
+    position: relative;
+    width: 1500px;
+    align-content: flex-end
 }
 
 div .inters {
     border: 5px solid green;
+    position: relative;
+    width: 1500px;
 }
 
 div .invis {
@@ -184,8 +190,9 @@ div .text {
 }
 
 #wet-tyres {
-    animation: rotation-wets 2.5s linear;
-    animation-delay: 0.5s;
+    animation: rotation-wets 3s ease-in;
+    position: relative;
+    animation-direction: alternate-reverse;
 }
 
 @keyframes rotation-wets {
@@ -193,13 +200,20 @@ div .text {
         transform: rotate(0deg);
     }
     to {
-        transform: rotate(360deg);
+        transform: rotate(240deg);
+    }
+    from {
+        left: 0px;
+    }
+    to {
+        left: 850px;
     }
 }
 
 #inter-tyres {
-    animation: rotation-inters 2.5s linear;
-    animation-delay: 0.5s;
+    animation: rotation-inters 3s ease-in;
+    position: relative;
+    animation-direction: alternate-reverse;
 }
 
 @keyframes rotation-inters {
@@ -207,31 +221,13 @@ div .text {
         transform: rotate(0deg);
     }
     to {
-        transform: rotate(-360deg);
+        transform: rotate(-240deg);
     }
-}
-
-#tyres {
-    animation-name: moving-tyres;
-    animation-duration: 2.5s;
-    animation-direction: alternate
-}
-
-@keyframes moving-tyres {
-    0% {
-        left: 0px;
+    from {
+        right: 0px;
     }
-    25% {
-        left: 100px;
-    }
-    50% {
-        left: 200px;
-    }
-    75% {
-        left: 300px;
-    }
-    100% {
-        left: 400px;
+    to {
+        right: 850px;
     }
 }
 
