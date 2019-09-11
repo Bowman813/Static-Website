@@ -190,7 +190,6 @@ div .text {
 }
 
 #wet-tyres {
-
     animation: rotation-wets 3s ease-in;
     position: relative;
     animation-direction: alternate-reverse;
@@ -215,7 +214,6 @@ div .text {
     animation: rotation-inters 3s ease-in;
     position: relative;
     animation-direction: alternate-reverse;
-
 }
 
 @keyframes rotation-inters {
@@ -225,14 +223,12 @@ div .text {
     to {
         transform: rotate(-240deg);
     }
-
     from {
-        right: 0px;
-  }
-  to {
-    right:-850px;
-  }
-
+        left: 0px;
+    }
+    to {
+        left: -850px;
+    }
 }
 
 
