@@ -148,14 +148,14 @@ div .text {
 }
 
 div .wets {
-    border: 5px solid blue;
+    border: 5px solid cornflowerblue;
     position: relative;
     width: 1500px;
     align-content: flex-end
 }
 
 div .inters {
-    border: 5px solid green;
+    border: 5px solid limegreen;
     position: relative;
     width: 1500px;
 }
@@ -169,7 +169,7 @@ h3 {
 }
 
 p {
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Courier New', Courier, monospace;
 }
 
 p .disclaimer {
@@ -182,15 +182,14 @@ p .disclaimer {
 
 h1,
 h3 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 div .text {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 #wet-tyres {
-
     animation: rotation-wets 3s ease-in;
     position: relative;
     animation-direction: alternate-reverse;
@@ -215,7 +214,6 @@ div .text {
     animation: rotation-inters 3s ease-in;
     position: relative;
     animation-direction: alternate-reverse;
-
 }
 
 @keyframes rotation-inters {
@@ -225,21 +223,13 @@ div .text {
     to {
         transform: rotate(-240deg);
     }
-
     from {
-        right: 0px;
-  }
-  to {
-    right:-850px;
-  }
-
+        left: 0px;
+    }
+    to {
+        left: -850px;
+    }
 }
-
-
-/*
-
-
-  */
 
 
 /*div {
