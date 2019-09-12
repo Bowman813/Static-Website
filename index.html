@@ -18,11 +18,8 @@
         <p align='center' id='subtitle'> Formula 1 is racings top sport and is the top league out of all other Formula's.
         </p>
         <script>
-
-
             document.getElementById('title').innerHTML = 'Home'
             document.getElementById('subtitle').innerHTML = 'Formula 1 is racings most prestige motorsport and the oldest being formed 13 May 1950'
-
         </script>
         <nav>
             <div class='nav'>
@@ -54,6 +51,39 @@
                 </div>
             </div>
         </nav>
+        <button onclick="day_mode()">  
+                Day Mode 
+            </button>
+        <script>
+            var str = "Click on button to change the background color";
+
+            el_up.innerHTML = str;
+
+            function changeColor(color) {
+                document.body.style.background = color;
+            }
+
+            function day_mode() {
+                changeColor('white');
+            }
+        </script>
+
+        <button onclick="night_mode()">  
+                Night Mode 
+                </button>
+        <script>
+            var str = "Click on button to change the background color";
+
+            el_up.innerHTML = str;
+
+            function changeColor(color) {
+                document.body.style.background = color;
+            }
+
+            function night_mode() {
+                changeColor('orange');
+            }
+        </script>
     </header>
 
 
@@ -68,90 +98,126 @@
                 <p class='disclaimer' align='center'>*These are the teams competing in the 2019 season and may change in the future*</p>
 
                 <div class="flex-container">
-                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /></div>
-                    <div class="flex-item"><img src='./images/Teams/mercedesf1.jpg' height=300 width=500 /></div>
+                    <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /></div>-->
+                    <div class="flex-item"><img src='./images/Teams/mercedesf1.jpg' id='teams' /></div>
                     <div class="flex-item text" align='center'>
                         <span style='color:cyan'>Mercedes-AMG Petronas Motorsport F1 Team</span> is the most successful team in the hybrid formula 1 car era with winning the last five World Constructors Championship and are in a fantastic possition to
-                        add a 6th. They're also known by their nickname "The Silver Arrows".
+                        add a 6th. They're also known by their nickname "The Silver Arrows". Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet volutpat consequat mauris
+                        nunc congue. Neque viverra justo nec ultrices. In est ante in nibh. Blandit turpis cursus in hac habitasse. Arcu risus quis varius quam quisque. Amet mattis vulputate enim nulla aliquet. Amet risus nullam eget felis eget nunc lobortis
+                        mattis. Amet nisl suscipit adipiscing bibendum est. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Euismod nisi porta lorem mollis aliquam.
+                        Faucibus turpis in eu mi bibendum.
                     </div>
-                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /></div>
+                    <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /></div>-->
                 </div>
+                <br>
                 <div class="flex-container">
-                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                    <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                     <div class="flex-item text" align='center'>
                         <span style='color:red'>Scuderia Ferrari</span> is the oldest surviving and most successful Formula One team, having competed in every world championship since the 1950 Formula One season. The team was founded by Enzo Ferrari,
-                        initially to race cars produced by Alfa Romeo, though by 1947 Ferrari had begun building its own cars.</div>
-                    <div class="flex-item"><img src='./images/Teams/ferrarif1.jpg' height=300 width=500 /></div>
-                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                        initially to race cars produced by Alfa Romeo, though by 1947 Ferrari had begun building its own cars. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Sit amet volutpat consequat mauris nunc congue. Neque viverra justo nec ultrices. In est ante in nibh. Blandit turpis cursus in hac habitasse. Arcu risus quis varius quam quisque. Amet mattis vulputate enim nulla aliquet. Amet
+                        risus nullam eget felis eget nunc lobortis mattis. Amet nisl suscipit adipiscing bibendum est. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada
+                        proin. Euismod nisi porta lorem mollis aliquam. Faucibus turpis in eu mi bibendum.</div>
+                    <div class="flex-item"><img src='./images/Teams/ferrarif1.jpg' id='teams' /></div>
+                    <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                 </div>
+                <br>
                 <div class="flex-container">
-                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /></div>
-                    <div class="flex-item"><img src='./images/Teams/redbullf1.jpg' height=300 width=500 /></div>
+                    <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /></div>-->
+                    <div class="flex-item"><img src='./images/Teams/redbullf1.jpg' id='teams' /></div>
                     <div class="flex-item text" align='center'>
                         The current <span style='color:navy'>Aston Martin Red Bull Racing</span> Formula 1 team can trace its origins back to the Stewart Grand Prix outfit that made its debut in 1997. Jackie Stewart sold his team to the Ford Motor Company
                         late in 1999, and Ford made the decision to rebrand the team Jaguar Racing, with little subsequent success over the next five years. However, recently they have found success with drivers such as Sebastian Vettel and Max Verstappen.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet volutpat consequat mauris nunc congue. Neque viverra justo nec ultrices. In est ante in nibh.
+                        Blandit turpis cursus in hac habitasse. Arcu risus quis varius quam quisque. Amet mattis vulputate enim nulla aliquet. Amet risus nullam eget felis eget nunc lobortis mattis. Amet nisl suscipit adipiscing bibendum est. Egestas
+                        tellus rutrum tellus pellentesque eu tincidunt tortor. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Euismod nisi porta lorem mollis aliquam. Faucibus turpis in eu mi bibendum.
                     </div>
-                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                    <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                 </div>
+                <br>
                 <div class="flex-container">
-                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                    <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                     <div class="flex-item text" align='center'>
                         Haas F1 Team debuted in the FIA Formula One World Championship in 2016, becoming the first American-led Formula One team since 1986. Founded by industrialist Gene Haas, Haas F1 Team is based in the United States on the same Kannapolis, North Carolina,
-                        campus as his championship-winning NASCAR team, Stewart-Haas Racing.</div>
-                    <div class="flex-item"><img src='./images/Teams/hassf1.jpg' height=300 width=500 /></div>
-                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                        campus as his championship-winning NASCAR team, Stewart-Haas Racing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet volutpat consequat mauris
+                        nunc congue. Neque viverra justo nec ultrices. In est ante in nibh. Blandit turpis cursus in hac habitasse. Arcu risus quis varius quam quisque. Amet mattis vulputate enim nulla aliquet. Amet risus nullam eget felis eget nunc lobortis
+                        mattis. Amet nisl suscipit adipiscing bibendum est. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Euismod nisi porta lorem mollis aliquam.
+                        Faucibus turpis in eu mi bibendum.</div>
+                    <div class="flex-item"><img src='./images/Teams/hassf1.jpg' id='teams' /></div>
+                    <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                 </div>
+                <br>
                 <div class="flex-container">
-                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
-                    <div class="flex-item"><img src='./images/Teams/renaultf1.jpg' height=300 width=500 /></div>
+                    <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
+                    <div class="flex-item"><img src='./images/Teams/renaultf1.jpg' id='teams' /></div>
                     <div class="flex-item text" align='center'>
                         <span style='color:rgb(219, 219, 20)'>Renault F1 Team</span>. The history of the team acquired by Renault started in 1981 as the Toleman Motorsport team, based in Witney, Oxfordshire, England. In 1986 the team was renamed to Benetton
-                        Formula, following its purchase in 1985 by the Benetton family. In 1992/3 the team moved a few miles to a new base in Enstone.</div>
-                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                        Formula, following its purchase in 1985 by the Benetton family. In 1992/3 the team moved a few miles to a new base in Enstone. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Sit amet volutpat consequat mauris nunc congue. Neque viverra justo nec ultrices. In est ante in nibh. Blandit turpis cursus in hac habitasse. Arcu risus quis varius quam quisque. Amet mattis vulputate enim
+                        nulla aliquet. Amet risus nullam eget felis eget nunc lobortis mattis. Amet nisl suscipit adipiscing bibendum est. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper
+                        malesuada proin. Euismod nisi porta lorem mollis aliquam. Faucibus turpis in eu mi bibendum.</div>
+                    <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
 
                 </div>
+                <br>
                 <div class="flex-container">
-                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                    <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                     <div class="flex-item text" align='center'>
                         <span style='color:pink'>Racing Point F1 Team</span> was the team that Racing Point UK made a late entry into the 2018 Formula One World Championship with. The team used the constructor name "Force India", competed under a British
                         licence and was based in Silverstone, United Kingdom. The team was formed in August 2018 when investors purchased the assets of Sahara Force India F1 team, which was operating under administration. The consortium of investors included
                         André Desmarais, Jonathan Dudman, John D. Idol, John McCaw Jr., Michael de Picciotto and Silas Chou named Racing Point UK Ltd. and were led by Lawrence Stroll, the father of then-Williams F1 driver Lance Stroll. The team made its
-                        competitive debut at the 2018 Belgian Grand Prix. The team was renamed in February 2019 as Racing Point F1 Team</div>
-                    <div class="flex-item"> <img src='./images/Teams/racingpointf1.jpg' height=300 width=500 /></div>
-                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                        competitive debut at the 2018 Belgian Grand Prix. The team was renamed in February 2019 as Racing Point F1 Team.</div>
+                    <div class="flex-item"> <img src='./images/Teams/racingpointf1.jpg' id='teams' /></div>
+                    <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                 </div>
+                <br>
                 <div class="flex-container">
-                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
-                    <div class="flex-item"><img src='./images/Teams/mclarenf1.jpg' height=300 width=500></div>
+                    <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
+                    <div class="flex-item"><img src='./images/Teams/mclarenf1.jpg' id='teams' /></div>
                     <div class="flex-item text" align='center'>
-                        <span style='color:orange'>Mclaren</span>. Originally known as Bruce McLaren Motor Racing, McLaren was founded by New Zealand F1 driver Bruce McLaren in 1963, making their grand prix debut at the 1966 Monaco Grand Prix. They were
-                        the first team to construct a car around a carbon fibre monacoque, a process now commonplace in most forms of motorsport.</div>
-                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                        <span style='color:rgb(255, 197, 72)'>Mclaren</span>. Originally known as Bruce McLaren Motor Racing, McLaren was founded by New Zealand F1 driver Bruce McLaren in 1963, making their grand prix debut at the 1966 Monaco Grand Prix.
+                        They were the first team to construct a car around a carbon fibre monacoque, a process now commonplace in most forms of motorsport. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                        et dolore magna aliqua. Sit amet volutpat consequat mauris nunc congue. Neque viverra justo nec ultrices. In est ante in nibh. Blandit turpis cursus in hac habitasse. Arcu risus quis varius quam quisque. Amet mattis vulputate enim
+                        nulla aliquet. Amet risus nullam eget felis eget nunc lobortis mattis. Amet nisl suscipit adipiscing bibendum est. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper
+                        malesuada proin. Euismod nisi porta lorem mollis aliquam. Faucibus turpis in eu mi bibendum.</div>
+                    <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                 </div>
+                <br>
                 <div class="flex-container">
-                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                    <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                     <div class="flex-item text" align='center'>
 
                         <span style='color:blue'>Scuderia Toro Rosso</span>. The team was established after Paul Stoddart sold his remaining interest in the Minardi team at the end of 2005 to Red Bull's owner, Dietrich Mateschitz and Minardi was renamed
-                        Toro Rosso. ... Vitantonio Liuzzi scored the team's first point in its first season at the 2006 United States Grand Prix.</div>
-                    <div class="flex-item"> <img src='./images/Teams/tororossof1.jpg' height=300 width=500></div>
-                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                        Toro Rosso. Vitantonio Liuzzi scored the team's first point in its first season at the 2006 United States Grand Prix. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Sit amet volutpat consequat mauris nunc congue. Neque viverra justo nec ultrices. In est ante in nibh. Blandit turpis cursus in hac habitasse. Arcu risus quis varius quam quisque. Amet mattis vulputate enim nulla
+                        aliquet. Amet risus nullam eget felis eget nunc lobortis mattis. Amet nisl suscipit adipiscing bibendum est. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper
+                        malesuada proin. Euismod nisi porta lorem mollis aliquam. Faucibus turpis in eu mi bibendum.</div>
+                    <div class="flex-item"> <img src='./images/Teams/tororossof1.jpg' id='teams' /></div>
+                    <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                 </div>
+                <br>
                 <div class="flex-container">
-                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
-                    <div class="flex-item"><img src='./images/Teams/alfaromeof1.jpg' height=300 width=500></div>
+                    <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
+                    <div class="flex-item"><img src='./images/Teams/alfaromeof1.jpg' id='teams' /></div>
                     <div class="flex-item text" align='center'> <span style='color:darkred'>Alfa Romeo Racing</span>. Autodelta, Marlboro and Benetton Team Alfa Romeo (1979–1985). During 1977, and after some persuasion by Chiti, Alfa Romeo gave Autodelta permission to start developing a Formula
-                        One car on their behalf. Thus named the Alfa Romeo 177, the car made its debut at the 1979 Belgian Grand Prix. They then made their return in 2018 as partners with Sauber until making their full return in 2019.</div>
-                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                        One car on their behalf. Thus named the Alfa Romeo 177, the car made its debut at the 1979 Belgian Grand Prix. They then made their return in 2018 as partners with Sauber until making their full return in 2019. Lorem ipsum dolor
+                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet volutpat consequat mauris nunc congue. Neque viverra justo nec ultrices. In est ante in nibh. Blandit turpis cursus
+                        in hac habitasse. Arcu risus quis varius quam quisque. Amet mattis vulputate enim nulla aliquet. Amet risus nullam eget felis eget nunc lobortis mattis. Amet nisl suscipit adipiscing bibendum est. Egestas tellus rutrum tellus pellentesque
+                        eu tincidunt tortor. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Euismod nisi porta lorem mollis aliquam. Faucibus turpis in eu mi bibendum.</div>
+                    <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                 </div>
+                <br>
                 <div class="flex-container">
-                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                    <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                     <div class="flex-item text" align='center'>
 
                         <span style='color:lightskyblue'>Williams Martini Racing</span>. The team was formed in 1977 after Frank Williams's two earlier unsuccessful F1 operations: Frank Williams Racing Cars (1969 to 1975) and Wolf–Williams Racing (1976).
-                        Williams started manufacturing its own cars the following year, and Switzerland's Clay Regazzoni won Williams's first race at the 1979 British Grand Prix.</div>
-                    <div class="flex-item"> <img src='./images/Teams/williamsf1.jpg' height=300 width=500></div>
-                    <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>
+                        Williams started manufacturing its own cars the following year, and Switzerland's Clay Regazzoni won Williams's first race at the 1979 British Grand Prix. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Sit amet volutpat consequat mauris nunc congue. Neque viverra justo nec ultrices. In est ante in nibh. Blandit turpis cursus in hac habitasse. Arcu risus quis varius quam quisque.
+                        Amet mattis vulputate enim nulla aliquet. Amet risus nullam eget felis eget nunc lobortis mattis. Amet nisl suscipit adipiscing bibendum est. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Massa tincidunt nunc pulvinar
+                        sapien et ligula ullamcorper malesuada proin. Euismod nisi porta lorem mollis aliquam. Faucibus turpis in eu mi bibendum.</div>
+                    <div class="flex-item"> <img src='./images/Teams/williamsf1.jpg' id='teams' /></div>
+                    <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                 </div>
 
             </article>
@@ -186,9 +252,9 @@
                             <li>Abu Dhabi Grand Prix - Yas Marina Circuit</li>
                         </ol>
                     </div>
-                    <div class='flex-item'>
+                    <!--<div class='flex-item'>
                         <img src='./images/950x350-white-solid-color-background.jpg' width=100 height=100>
-                    </div>
+                    </div>-->
                     <div class='flex-item'>
                         <p>*Monaco Grand Prix Circuit*</p>
                         <img src='./images/Monaco-Grand-Prix-track-1886626.jpg'>
