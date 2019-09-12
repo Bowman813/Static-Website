@@ -49,21 +49,54 @@
                 </div>
             </div>
         </nav>
+        <button onclick="day_mode()">  
+                Day Mode 
+            </button>
+        <script>
+            var str = "Click on button to change the background color";
+
+            el_up.innerHTML = str;
+
+            function changeColor(color) {
+                document.body.style.background = color;
+            }
+
+            function day_mode() {
+                changeColor('white');
+            }
+        </script>
+
+        <button onclick="night_mode()">  
+                Night Mode 
+                </button>
+        <script>
+            var str = "Click on button to change the background color";
+
+            el_up.innerHTML = str;
+
+            function changeColor(color) {
+                document.body.style.background = color;
+            }
+
+            function night_mode() {
+                changeColor('orange');
+            }
+        </script>
     </header>
     <div class='flex-container'>
-        <img src='./images/F1-2019-Preview-01-Header-2060x618.jpg' width=1500>
+        <img src='./images/F1-2019-Preview-01-Header-2060x618.jpg' width=100%>
     </div>
     <div class='flex-container'>
         <h2>Current 2019 Drivers Standings</h2>
     </div>
     <div class='flex-container'>
-        <div class='flex-item'><img src='./images/2019 drivers standings.png' height='720' width='1500' /></div>
+        <div class='flex-item'><img src='./images/2019 drivers standings.png' width=100% /></div>
     </div>
     <div class='flex-container'>
         <h2>Current 2019 Constructors Standings</h2>
     </div>
     <div class='flex-container'>
-        <div class='flex-item'><img src='./images/2019 constructors standings.png' height='360' width='1500' /></div>
+        <div class='flex-item'><img src='./images/2019 constructors standings.png' width=100% /></div>
     </div>
     <div class='flex-container'>
         <h2>Honorable mentions throughout the season so far</h2>

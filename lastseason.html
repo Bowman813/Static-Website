@@ -46,22 +46,55 @@
                 </div>
             </div>
         </nav>
+        <button onclick="day_mode()">  
+                Day Mode 
+            </button>
+        <script>
+            var str = "Click on button to change the background color";
+
+            el_up.innerHTML = str;
+
+            function changeColor(color) {
+                document.body.style.background = color;
+            }
+
+            function day_mode() {
+                changeColor('white');
+            }
+        </script>
+
+        <button onclick="night_mode()">  
+                Night Mode 
+                </button>
+        <script>
+            var str = "Click on button to change the background color";
+
+            el_up.innerHTML = str;
+
+            function changeColor(color) {
+                document.body.style.background = color;
+            }
+
+            function night_mode() {
+                changeColor('orange');
+            }
+        </script>
     </header>
     <div class='flex-container'>
-        <img src='./images/f1-track-l.jpg' />
+        <img src='./images/f1-track-l.jpg' width=100%/>
     </div>
     <div class='flex-container'>
         <h2>World Drivers Championship and Race Results</h2>
     </div>
     <div class='flex-container'>
-        <div class='flex-item'><img src='./images/drivers standings.png' height=720 width=1500/></div>
+        <div class='flex-item'><img src='./images/drivers standings.png' width=100%/></div>
     </div>
 
     <div class='flex-container'>
         <h2>World Constructors Championship and Race Results</h2>
     </div>
     <div class='flex-container'>
-        <div class='flex-item'><img src='./images/constructors standings.png' height=720 width=1500/></div>
+        <div class='flex-item'><img src='./images/constructors standings.png' width=100%/></div>
     </div>
     <hr>
     <div class='flex-container'>
