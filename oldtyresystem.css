@@ -140,7 +140,7 @@ div .text {
 }
 
 div .super-hards {
-    border: 5px solid orange;
+    border: 5px solid rgb(255, 174, 0);
 }
 
 div .hards {
@@ -160,7 +160,7 @@ div .super-softs {
 }
 
 div .ultra-softs {
-    border: 5px solid purple;
+    border: 5px solid rgb(187, 0, 187)
 }
 
 div.hyper-softs {
@@ -172,7 +172,7 @@ h3 {
 }
 
 p {
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Courier New', Courier, monospace;
 }
 
 p .disclaimer {
