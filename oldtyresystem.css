@@ -1,7 +1,11 @@
+#f1logo {
+    position: relative;
+}
+
 #f1logo img {
-    position: fixed;
+    position: absolute;
     top: -65px;
-    right: -40px;
+    right: 0px;
 }
 
 #heading,
@@ -136,7 +140,7 @@ div .text {
 }
 
 div .super-hards {
-    border: 5px solid rgb(255, 175, 36);
+    border: 5px solid orange;
 }
 
 div .hards {

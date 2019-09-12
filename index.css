@@ -9,14 +9,18 @@
     margin: 5px 10px;
 }
 
+#f1logo {
+    position: relative;
+}
+
 #f1logo img {
-    position: fixed;
+    position: absolute;
     top: -65px;
-    right: -40px;
+    right: 0px;
 }
 
 body {
-    background: rgb(255, 255, 255);
+    background: white;
 }
 
 .container {
@@ -168,9 +172,4 @@ h3 {
 
 div .text {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-#teams {
-    max-width: 100%;
-    height: auto;
 }
