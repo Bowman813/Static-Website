@@ -51,16 +51,18 @@
                 Day Mode 
             </button>
         <script>
-            var str = "Click on button to change the background color";
-
-            el_up.innerHTML = str;
-
             function changeColor(color) {
                 document.body.style.background = color;
             }
 
             function day_mode() {
                 changeColor('white');
+                document.getElementById("title").style.color = "black";
+                document.getElementById("subtitle").style.color = "black";
+                document.getElementById("text").style.color = "black";
+                document.getElementById("drivers_standings").style.color = "black";
+                document.getElementById("constructors_standings").style.color = "black";
+                document.getElementById("honorable_mentions").style.color = "black";
             }
         </script>
 
@@ -68,16 +70,18 @@
                 Night Mode 
                 </button>
         <script>
-            var str = "Click on button to change the background color";
-
-            el_up.innerHTML = str;
-
             function changeColor(color) {
                 document.body.style.background = color;
             }
 
             function night_mode() {
-                changeColor('orange');
+                changeColor('black');
+                document.getElementById("title").style.color = "white";
+                document.getElementById("subtitle").style.color = "white";
+                document.getElementById("text").style.color = "white";
+                document.getElementById("drivers_standings").style.color = "white";
+                document.getElementById("constructors_standings").style.color = "white";
+                document.getElementById("honorable_mentions").style.color = "white";
             }
         </script>
     </header>
@@ -85,25 +89,25 @@
         <img src='./images/f1game-features-header-large.jpg' width=100%/>
     </div>
     <div class='flex-container'>
-        <h2>World Drivers Championship and Race Results</h2>
+        <h2 id='drivers_standings'>World Drivers Championship and Race Results</h2>
     </div>
     <div class='flex-container'>
         <div class='flex-item'><img src='./images/drivers standings.png' height=100% width=100%/></div>
     </div>
 
     <div class='flex-container'>
-        <h2>World Constructors Championship and Race Results</h2>
+        <h2 id='constructors_standings'>World Constructors Championship and Race Results</h2>
     </div>
     <div class='flex-container'>
         <div class='flex-item'><img src='./images/constructors standings.png' height=100% width=100%/></div>
     </div>
     <hr>
     <div class='flex-container'>
-        <h2>Honorable Mentions Throughout the Season</h2>
+        <h2 id='honorable_mentions'>Honorable Mentions Throughout the Season</h2>
     </div>
     <div class='flex-container'>
         <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' width=500 height=1000 /></div>
-        <div class='flex-item honorable-mentions text'>
+        <div class='flex-item honorable-mentions text' id='text'>
             The first 6 races of the season has 3 different winners with Daniel Ricciardo, Lewis Hamilton and Sebatian Vettel all winning 2 each including an emotional win for Daniel ricciardo at monaco as he survived his engine power loss to get his redemption for
             2 years ealier where a pit stop error cost him the win.<br>
             <br> However, Daniels Ricciardo's luck was about to run out. There already warning signs of a difficult season for Daniel Ricciardo at the start of the season with a power unit failure in Bahrain and his team mate crashin into the back of
