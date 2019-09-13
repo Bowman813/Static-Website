@@ -54,16 +54,18 @@
                 Day Mode 
             </button>
         <script>
-            var str = "Click on button to change the background color";
-
-            el_up.innerHTML = str;
-
             function changeColor(color) {
                 document.body.style.background = color;
             }
 
             function day_mode() {
                 changeColor('white');
+                document.getElementById("title").style.color = "black";
+                document.getElementById("subtitle").style.color = "black";
+                document.getElementById("text").style.color = "black";
+                document.getElementById("drivers_standings").style.color = "black";
+                document.getElementById("constructors_standings").style.color = "black";
+                document.getElementById("honorable_mentions").style.color = "black";
             }
         </script>
 
@@ -71,16 +73,18 @@
                 Night Mode 
                 </button>
         <script>
-            var str = "Click on button to change the background color";
-
-            el_up.innerHTML = str;
-
             function changeColor(color) {
                 document.body.style.background = color;
             }
 
             function night_mode() {
-                changeColor('orange');
+                changeColor('black');
+                document.getElementById("title").style.color = "white";
+                document.getElementById("subtitle").style.color = "white";
+                document.getElementById("text").style.color = "white";
+                document.getElementById("drivers_standings").style.color = "white";
+                document.getElementById("constructors_standings").style.color = "white";
+                document.getElementById("honorable_mentions").style.color = "white";
             }
         </script>
     </header>
@@ -90,7 +94,7 @@
 
     </div>
     <div class='flex-container'>
-        <h2>Current 2019 Drivers Standings</h2>
+        <h2 id='drivers_standings'>Current 2019 World Drivers Championship Standings</h2>
     </div>
     <div class='flex-container'>
 
@@ -98,19 +102,20 @@
 
     </div>
     <div class='flex-container'>
-        <h2>Current 2019 Constructors Standings</h2>
+        <h2 id='constructors_standings'>Current 2019 World Constructors Championship Standings</h2>
     </div>
     <div class='flex-container'>
 
         <div class='flex-item'><img src='./images/2019 constructors standings.png' width=100% /></div>
 
     </div>
+    <hr>
     <div class='flex-container'>
-        <h2>Honorable mentions throughout the season so far</h2>
+        <h2 id='honorable_mentions'>Honorable mentions throughout the season so far</h2>
     </div>
     <div class='flex-container'>
         <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' width=500 height=1000 /></div>
-        <div class='flex-item honorable-mentions text'>
+        <div class='flex-item honorable-mentions text' id='text'>
             During the winter break after the final race of 2018, Valtteri Bottas came under a lot of flack for poor performances and failing to get a win for the entire season meanwhile his team mate won the championship. At the first race of the season he silenced
             them all after putting in a solid performance and getting his first win in over a year and was quoted on his team radio saying 'to who it may concern f*** you'.<br>
             <br> In only his second race for Ferrari, Charles Leclerc was able to get pole position for the Bahrain Grand Prix. Despite a relatively poor start leading to his team mate overtaking him he managed to regain first place and controlled the

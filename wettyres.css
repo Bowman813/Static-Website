@@ -1,11 +1,7 @@
-#f1logo {
-    position: relative;
-}
-
 #f1logo img {
-    position: absolute;
+    position: fixed;
     top: -65px;
-    right: 0px;
+    right: -40px;
 }
 
 body {
