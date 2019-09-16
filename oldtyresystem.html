@@ -23,29 +23,32 @@
             document.getElementById("subheading").innerHTML = "This is a breakdown on the most complex tyre system to date";
         </script>
         <nav>
-            <div class='nav'>
-                <div class='container'>
-                    <ul align='center'>
-                        <a href='./index.html'>
-                            <li>Home</li>
-                            <a href='./currentseason.html' role="button">
-                                <li>Current Season</li>
-                            </a>
-                            <a href='./lastseason.html' role="button">
-                                <li>Last Season</li>
-                            </a>
-                            <div class="dropdown">
-                                <button class="dropbtn">Tyre Types
-                                    </button>
-                                <div class="dropdown-content">
-                                    <a href="./tyrecompounds.html">Dry Tyre Types</a>
-                                    <a href="./wettyres.html">Wet Tyre Types</a>
-                                    <a href="./oldtyresystem.html">Old Tyre System</a>
-                                </div>
-                            </div>
-                    </ul>
+            <div class="topnav" id="myTopnav" align='center'>
+                <a href="./index.html" class="active">Home</a>
+                <a href="./currentseason.html">Current Season</a>
+                <a href="./lastseason.html">Last Season</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Tyre Systems 
+                                    <i class="fa fa-caret-down"></i>
+                                  </button>
+                    <div class="dropdown-content">
+                        <a href="./tyrecompounds.html">2019 Tyre System</a>
+                        <a href="./wettyres.html">Wet Weather Tyres</a>
+                        <a href="./oldtyresystem.html">2018 Tyre System</a>
+                    </div>
                 </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+            </script>
         </nav>
         <button onclick="day_mode()">  
                 Day Mode 
@@ -60,7 +63,16 @@
             }
 
             function day_mode() {
-                changeColor('black');
+                changeColor('lightgray');
+                document.getElementById("heading").style.color = "black";
+                document.getElementById("subheading").style.color = "black";
+                document.getElementById("super-hards").style.color = "black";
+                document.getElementById("hards").style.color = "black";
+                document.getElementById("mediums").style.color = "black";
+                document.getElementById("softs").style.color = "black";
+                document.getElementById("super-softs").style.color = "black";
+                document.getElementById("ultra-softs").style.color = "black";
+                document.getElementById("hyper-softs").style.color = "black";
             }
         </script>
 
@@ -77,7 +89,16 @@
             }
 
             function night_mode() {
-                changeColor('#FFBB4C');
+                changeColor('black');
+                document.getElementById("heading").style.color = "white";
+                document.getElementById("subheading").style.color = "white";
+                document.getElementById("super-hards").style.color = "white";
+                document.getElementById("hards").style.color = "white";
+                document.getElementById("mediums").style.color = "white";
+                document.getElementById("softs").style.color = "white";
+                document.getElementById("super-softs").style.color = "white";
+                document.getElementById("ultra-softs").style.color = "white";
+                document.getElementById("hyper-softs").style.color = "white";
             }
         </script>
     </header>
@@ -87,19 +108,19 @@
     </div>
     <div class='flex-container' align='center'><img src='./images/Tyres/18 tyre system.jpg' width=100%/></div>
     <div class='flex-container'>
-        <div class='flex-item text super-hards' style="font-size:1.25vw;">The super hard compound is the hardest compound available to teams to use during a race weekend meaning it is the slowest but the most durable. However due to a multitude of factors this compound was never used in 2018 but mainly because there
+        <div class='flex-item text super-hards' style="font-size:1.25vw;" id='super-hards'>The super hard compound is the hardest compound available to teams to use during a race weekend meaning it is the slowest but the most durable. However due to a multitude of factors this compound was never used in 2018 but mainly because there
             were faster options. They have also been ditched for 2019 as the hard tyre will once again be the hardest compound. Super hards have an optimum temperature of 120-145°C.</div>
-        <div class='flex-item text hards' style="font-size:1.25vw;">The hard compound is the 2nd hardest compound available and made only one appearance during 2018 at the British Grand Prix. It is faster than the super hards but less durable but in comparison so the rest of the tyres they are still very durable.
+        <div class='flex-item text hards' style="font-size:1.25vw;" id='hards'>The hard compound is the 2nd hardest compound available and made only one appearance during 2018 at the British Grand Prix. It is faster than the super hards but less durable but in comparison so the rest of the tyres they are still very durable.
             These tyres will go on to be the hardest compound in 2019 but again won't be used regularly but will be available. Hards has a lower optimum temperature of 105-135°C.</div>
-        <div class='flex-item text mediums' style="font-size:1.25vw;">The medium compound tyre is a solid choice for teams on a race weekend as for some tracks they can pull off a one stop strategy and pit relatively early and swap to the mediums tyres and go on to the end of the race, however that risks vulnerability
+        <div class='flex-item text mediums' style="font-size:1.25vw;" id='mediums'>The medium compound tyre is a solid choice for teams on a race weekend as for some tracks they can pull off a one stop strategy and pit relatively early and swap to the mediums tyres and go on to the end of the race, however that risks vulnerability
             towards the end of the race but this is still a popular race strategy and has worked many times. Mediums actually have a higher optimum temp than hards with 110-140°C</div>
-        <div class='flex-item text softs' style="font-size:1.25vw;">The soft compound tyre is the tyre compound you will see most often and is a favourite with teams. The soft compound offers a lot more speed than medium compound tyre being 0.8 seconds faster per lap but suffers a major loss of durability due
+        <div class='flex-item text softs' style="font-size:1.25vw;" id='softs'>The soft compound tyre is the tyre compound you will see most often and is a favourite with teams. The soft compound offers a lot more speed than medium compound tyre being 0.8 seconds faster per lap but suffers a major loss of durability due
             to such a massive increase in speed per lap meaning more energy through the tyres. Softs have the same optimum temperature as hard tyres with it being between 105-135°C</div>
-        <div class='flex-item text super-softs' style="font-size:1.25vw;">The super soft compound is sometimes the sofest compound at a race weekend but not always, if the track is a street circuit or has lots of slow winding corners, it is often the medium compound or even the hardest in some cases due to less energy
+        <div class='flex-item text super-softs' style="font-size:1.25vw;" id='super-softs'>The super soft compound is sometimes the sofest compound at a race weekend but not always, if the track is a street circuit or has lots of slow winding corners, it is often the medium compound or even the hardest in some cases due to less energy
             being passed through the tyres allowing for even softer compounds to be maintained for longer. The optimum temperature for this compound is between 90-110°C.</div>
-        <div class='flex-item text ultra-softs' style="font-size:1.25vw;">The ultra soft compound has been the softest compound at several races in 2018 such as China, Azerbaijan, France and Austria and is an ideal choice for street circuits for the softer or medium compound for teams to bring to the race. It is also
+        <div class='flex-item text ultra-softs' style="font-size:1.25vw;" id='ultra-softs'>The ultra soft compound has been the softest compound at several races in 2018 such as China, Azerbaijan, France and Austria and is an ideal choice for street circuits for the softer or medium compound for teams to bring to the race. It is also
             0.6 seconds faster than super soft tyres but is also a lot less durable than super softs. The optimum temperature for this compound is also between 90-110°C.</div>
-        <div class='flex-item text hyper-softs' style="font-size:1.25vw;">The hyper soft tyre was newly introduced in the 2018 season and became the new softest tyre available to teams. Monaco, Singapore and Abu Dhabi are all tracks where hyper soft tyres were used as the softest tyre as they are street circuits and
+        <div class='flex-item text hyper-softs' style="font-size:1.25vw;" id='hyper-softs'>The hyper soft tyre was newly introduced in the 2018 season and became the new softest tyre available to teams. Monaco, Singapore and Abu Dhabi are all tracks where hyper soft tyres were used as the softest tyre as they are street circuits and
             are mainly composed of tight slow corners. This tyre compound is 0.7-0.8 seconds faster per lap than ultras. The optimum temperature for this tyre is between 85-105°C.</div>
 
     </div>
@@ -107,34 +128,32 @@
 </body>
 <footer>
     <nav>
-        <div class='nav'>
-            <div class='container'>
-                <ul align='center'>
-                    <a href='./index.html'>
-                        <li>Home</li>
-                        <a href='./currentseason.html' role="button">
-                            <li>Current Season</li>
-                        </a>
-                        <a href='./lastseason.html' role="button">
-                            <li>Last Season</li>
-                        </a>
-                        <div class="dropdown">
-                            <button class="dropbtn">Tyre Types
-                                                    </button>
-                            <div class="dropdown-content">
-                                <a href="./tyrecompounds.html">Dry Tyre Types</a>
-                                <a href="./wettyres.html">Wet Tyre Types</a>
-                                <a href="./oldtyresystem.html">Old Tyre System</a>
-                            </div>
-                        </div>
-
-
-
-
-
-                </ul>
+        <div class="topnav" id="myTopnav" align='center'>
+            <a href="./index.html" class="active">Home</a>
+            <a href="./currentseason.html">Current Season</a>
+            <a href="./lastseason.html">Last Season</a>
+            <div class="dropdown">
+                <button class="dropbtn">Tyre Systems 
+                                    <i class="fa fa-caret-down"></i>
+                                  </button>
+                <div class="dropdown-content">
+                    <a href="./tyrecompounds.html">2019 Tyre System</a>
+                    <a href="./wettyres.html">Wet Weather Tyres</a>
+                    <a href="./oldtyresystem.html">2018 Tyre System</a>
+                </div>
             </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
     </nav>
 </footer>
 

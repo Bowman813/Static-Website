@@ -24,30 +24,32 @@
             document.getElementById("subtitle").innerHTML = "Drivers Standings and Constructors Standings plus honorable moments from the last season (2018)";
         </script>
         <nav>
-            <div class='nav'>
-                <div class='container'>
-                    <ul align='center'>
-                        <a href='./index.html'>
-                            <li>Home</li>
-                            <a href='./currentseason.html' role="button">
-                                <li>Current Season</li>
-                            </a>
-                            <a href='./lastseason.html' role="button">
-                                <li>Last Season</li>
-                            </a>
-
-                            <div class="dropdown">
-                                <button class="dropbtn">Tyre Types
-                                    </button>
-                                <div class="dropdown-content">
-                                    <a href="./tyrecompounds.html">Dry Tyre Types</a>
-                                    <a href="./wettyres.html">Wet Tyre Types</a>
-                                    <a href="./oldtyresystem.html">Old Tyre System</a>
-                                </div>
-                            </div>
-                    </ul>
+            <div class="topnav" id="myTopnav" align='center'>
+                <a href="./index.html" class="active">Home</a>
+                <a href="./currentseason.html">Current Season</a>
+                <a href="./lastseason.html">Last Season</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Tyre Systems 
+                                    <i class="fa fa-caret-down"></i>
+                                  </button>
+                    <div class="dropdown-content">
+                        <a href="./tyrecompounds.html">2019 Tyre System</a>
+                        <a href="./wettyres.html">Wet Weather Tyres</a>
+                        <a href="./oldtyresystem.html">2018 Tyre System</a>
+                    </div>
                 </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+            </script>
         </nav>
         <button onclick="day_mode()">  
                 Day Mode 
@@ -58,7 +60,7 @@
             }
 
             function day_mode() {
-                changeColor('white');
+                changeColor('lightgray');
                 document.getElementById("title").style.color = "black";
                 document.getElementById("subtitle").style.color = "black";
                 document.getElementById("text").style.color = "black";
@@ -91,24 +93,24 @@
         <img src='./images/f1game-features-header-large.jpg' width=100%/>
     </div>
     <div class='flex-container'>
-        <h2 id='drivers_standings' style="font-size:1.45vw;">World Drivers Championship and Race Results</h2>
+        <h2 id='drivers_standings' style="font-size:1.45vw;" align='center'>World Drivers Championship and Race Results</h2>
     </div>
     <div class='flex-container'>
         <div class='flex-item'><img src='./images/drivers standings.png' height=100% width=100%/></div>
     </div>
 
     <div class='flex-container'>
-        <h2 id='constructors_standings' style="font-size:1.45vw;">World Constructors Championship and Race Results</h2>
+        <h2 id='constructors_standings' style="font-size:1.45vw;" align='center'>World Constructors Championship and Race Results</h2>
     </div>
     <div class='flex-container'>
         <div class='flex-item'><img src='./images/constructors standings.png' height=100% width=100%/></div>
     </div>
     <hr>
     <div class='flex-container'>
-        <h2 id='honorable_mentions' style="font-size:1.45vw;">Honorable Mentions Throughout the Season</h2>
+        <h2 id='honorable_mentions' style="font-size:1.45vw;" align='center'>Honorable Mentions Throughout the Season</h2>
     </div>
     <div class='flex-container'>
-        <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' width=500 height=1000 /></div>
+        <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' width=500 height=1000 /></div>-->
         <div class='flex-item honorable-mentions text' id='text' style="font-size:1.25vw;">
             The first 6 races of the season has 3 different winners with Daniel Ricciardo, Lewis Hamilton and Sebatian Vettel all winning 2 each including an emotional win for Daniel ricciardo at monaco as he survived his engine power loss to get his redemption for
             2 years ealier where a pit stop error cost him the win.<br>
@@ -141,45 +143,43 @@
             switfly closed the door on Ocon leading to the 2 making contact and costing Max the race win. After the race had finished and the drivers had gone to weigh themselves, Max spotted Esteban and confronted him and began to push him. Esteban kept
             a cool head and didn't retaliate and Max walked away but was penalised for pushing Esteban.<br>
             <br>
+            <div class='video-container'><iframe width="560" height="315" src="https://www.youtube.com/embed/playlist?list=PLfoNZDHitwjUUrM4dYe542iCcRpEzS_RX" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
         </div>
-        <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' width=500 height=1000/></div>
+        <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' width=500 height=1000/></div>-->
     </div>
-    <div class='flex-container'>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/playlist?list=PLfoNZDHitwjUUrM4dYe542iCcRpEzS_RX" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </div>
+
+
+
 
 </body>
 <footer>
     <nav>
-        <div class='nav'>
-            <div class='container'>
-                <ul align='center'>
-                    <a href='./index.html'>
-                        <li>Home</li>
-                        <a href='./currentseason.html' role="button">
-                            <li>Current Season</li>
-                        </a>
-                        <a href='./lastseason.html' role="button">
-                            <li>Last Season</li>
-                        </a>
-
-                        <div class="dropdown">
-                            <button class="dropbtn">Tyre Types
-                                            </button>
-                            <div class="dropdown-content">
-                                <a href="./tyrecompounds.html">Dry Tyre Types</a>
-                                <a href="./wettyres.html">Wet Tyre Types</a>
-                                <a href="./oldtyresystem.html">Old Tyre System</a>
-                            </div>
-                        </div>
-
-
-
-
-
-                </ul>
+        <div class="topnav" id="myTopnav" align='center'>
+            <a href="./index.html" class="active">Home</a>
+            <a href="./currentseason.html">Current Season</a>
+            <a href="./lastseason.html">Last Season</a>
+            <div class="dropdown">
+                <button class="dropbtn">Tyre Systems 
+                                    <i class="fa fa-caret-down"></i>
+                                  </button>
+                <div class="dropdown-content">
+                    <a href="./tyrecompounds.html">2019 Tyre System</a>
+                    <a href="./wettyres.html">Wet Weather Tyres</a>
+                    <a href="./oldtyresystem.html">2018 Tyre System</a>
+                </div>
             </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
     </nav>
 </footer>
 
