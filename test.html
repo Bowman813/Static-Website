@@ -10,77 +10,44 @@
 
 <body>
     <header>
-        <div id='f1logo'>
-            <img class='logo' src='images/f1-logo-2017.png' height=200 width- 300 />
-        </div>
 
-        <h1> F1 Legends </h1>
-        <p>Heres a little info on some of the best Formula 1 drivers ever
+
+        <h1 align='center'> F1 Legends </h1>
+        <p align='center'>Heres a little info on some of the best Formula 1 drivers ever
         </p>
         <nav>
-            <div class='nav'>
-                <div class='container'>
-                    <ul align='center'>
-                        <a href='./index.html'>
-                            <li>Home</li>
-                            <a href='./currentseason.html' role="button">
-                                <li>Current Season</li>
-                            </a>
-                            <a href='./lastseason.html' role="button">
-                                <li>Last Season</li>
-                            </a>
-                            <a href='./f1legends.html' role="button">
-                                <li>Formula 1 Legends</li>
-                            </a>
-                            <div class="dropdown">
-                                <button class="dropbtn">Tyre Types
-                                    </button>
-                                <div class="dropdown-content">
-                                    <a href="./tyrecompounds.html">Dry Tyre Types</a>
-                                    <a href="./wettyres.html">Wet Tyre Types</a>
-                                    <a href="./oldtyresystem.html">Old Tyre System</a>
-                                </div>
-                            </div>
-                    </ul>
+            <div class="topnav" id="myTopnav" align='center'>
+                <a href="./index.html" class="active">Home</a>
+                <a href="./currentseason.html">Current Season</a>
+                <a href="./lastseason.html">Last Season</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Tyre Systems 
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                    <div class="dropdown-content">
+                        <a href="./tyrecompounds.html">2019 Tyre System</a>
+                        <a href="./wettyres.html">Wet Weather Tyres</a>
+                        <a href="./oldtyresystem.html">2018 Tyre System</a>
+                    </div>
                 </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+            </script>
         </nav>
     </header>
+
 </body>
 <footer>
-    <nav>
-        <div class='nav'>
-            <div class='container'>
-                <ul align='center'>
-                    <a href='./index.html'>
-                        <li>Home</li>
-                        <a href='./currentseason.html' role="button">
-                            <li>Current Season</li>
-                        </a>
-                        <a href='./lastseason.html' role="button">
-                            <li>Last Season</li>
-                        </a>
-                        <a href='./f1legends.html' role="button">
-                            <li>Formula 1 Legends</li>
-                        </a>
-                        <div class="dropdown">
-                            <button class="dropbtn">Tyre Types
-                                            </button>
-                            <div class="dropdown-content">
-                                <a href="./tyrecompounds.html">Dry Tyre Types</a>
-                                <a href="./wettyres.html">Wet Tyre Types</a>
-                                <a href="./oldtyresystem.html">Old Tyre System</a>
-                            </div>
-                        </div>
 
-
-
-
-
-                </ul>
-            </div>
-        </div>
-    </nav>
 </footer>
 
 </html>

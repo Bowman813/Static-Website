@@ -24,35 +24,32 @@
             document.getElementById('subtitle').innerHTML = 'Formula 1 is racings most prestige motorsport and the oldest being formed 13 May 1950'
         </script>
         <nav>
-            <div class='nav'>
-                <div class='container'>
-                    <ul align='center'>
-                        <a href='./index.html'>
-                            <li>Home</li>
-                        </a>
-                        <a href='./currentseason.html' role="button">
-                            <li>Current Season</li>
-                        </a>
-                        <a href='./lastseason.html' role="button">
-                            <li>Last Season</li>
-                        </a>
-                        <div class="dropdown">
-                            <button class="dropbtn">Tyre Types
-                                    </button>
-                            <div class="dropdown-content">
-                                <a href="./tyrecompounds.html">Dry Tyre Types</a>
-                                <a href="./wettyres.html">Wet Tyre Types</a>
-                                <a href="./oldtyresystem.html">Old Tyre System</a>
-                            </div>
-                        </div>
-
-
-
-
-
-                    </ul>
+            <div class="topnav" id="myTopnav" align='center'>
+                <a href="./index.html" class="active">Home</a>
+                <a href="./currentseason.html">Current Season</a>
+                <a href="./lastseason.html">Last Season</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Tyre Systems 
+                                <i class="fa fa-caret-down"></i>
+                              </button>
+                    <div class="dropdown-content">
+                        <a href="./tyrecompounds.html">2019 Tyre System</a>
+                        <a href="./wettyres.html">Wet Weather Tyres</a>
+                        <a href="./oldtyresystem.html">2018 Tyre System</a>
+                    </div>
                 </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+            </script>
         </nav>
         <button onclick="day_mode()">  
                 Day Mode 
@@ -63,7 +60,7 @@
             }
 
             function day_mode() {
-                changeColor('white');
+                changeColor('lightgray');
                 document.getElementById("title").style.color = "black";
                 document.getElementById("subtitle").style.color = "black";
                 document.getElementById("text1").style.color = "black";
@@ -128,7 +125,7 @@
                 <h3 align='center' id='teams_header' style="font-size:1.45vw;">Teams</h3>
                 <p class='disclaimer' align='center' id='teams_subheader' style="font-size:1.25vw;">*These are the teams competing in the 2019 season and may change in the future*</p>
 
-                <div class="flex-container">
+                <div class="flex-container" id='mercedes'>
                     <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /></div>-->
                     <div class="flex-item"><img src='./images/Teams/mercedesf1.jpg' id='teams' /></div>
                     <div class="flex-item text" align='center' id='text1' style="font-size:1.25vw;">
@@ -141,7 +138,7 @@
                     <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /></div>-->
                 </div>
                 <br>
-                <div class="flex-container">
+                <div class="flex-container" id='ferrari'>
                     <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                     <div class="flex-item text" align='center' id='text2' style="font-size:1.25vw;">
                         <span style='color:red'>Scuderia Ferrari</span> is the oldest surviving and most successful Formula One team, having competed in every world championship since the 1950 Formula One season. The team was founded by Enzo Ferrari,
@@ -153,32 +150,32 @@
                     <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                 </div>
                 <br>
-                <div class="flex-container">
+                <div class="flex-container" id='redbull'>
                     <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /></div>-->
                     <div class="flex-item"><img src='./images/Teams/redbullf1.jpg' id='teams' /></div>
                     <div class="flex-item text" align='center' id='text3' style="font-size:1.25vw;">
-                        The current <span style='color:navy'>Aston Martin Red Bull Racing</span> Formula 1 team can trace its origins back to the Stewart Grand Prix outfit that made its debut in 1997. Jackie Stewart sold his team to the Ford Motor Company
-                        late in 1999, and Ford made the decision to rebrand the team Jaguar Racing, with little subsequent success over the next five years. However, recently they have found success with drivers such as Sebastian Vettel and Max Verstappen.
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet volutpat consequat mauris nunc congue. Neque viverra justo nec ultrices. In est ante in nibh.
-                        Blandit turpis cursus in hac habitasse. Arcu risus quis varius quam quisque. Amet mattis vulputate enim nulla aliquet. Amet risus nullam eget felis eget nunc lobortis mattis. Amet nisl suscipit adipiscing bibendum est. Egestas
-                        tellus rutrum tellus pellentesque eu tincidunt tortor. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Euismod nisi porta lorem mollis aliquam. Faucibus turpis in eu mi bibendum.
+                        The current <span style='color:rgb(24, 24, 179)'>Aston Martin Red Bull Racing</span> Formula 1 team can trace its origins back to the Stewart Grand Prix outfit that made its debut in 1997. Jackie Stewart sold his team to the Ford
+                        Motor Company late in 1999, and Ford made the decision to rebrand the team Jaguar Racing, with little subsequent success over the next five years. However, recently they have found success with drivers such as Sebastian Vettel
+                        and Max Verstappen. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet volutpat consequat mauris nunc congue. Neque viverra justo nec ultrices. In
+                        est ante in nibh. Blandit turpis cursus in hac habitasse. Arcu risus quis varius quam quisque. Amet mattis vulputate enim nulla aliquet. Amet risus nullam eget felis eget nunc lobortis mattis. Amet nisl suscipit adipiscing bibendum
+                        est. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Euismod nisi porta lorem mollis aliquam. Faucibus turpis in eu mi bibendum.
                     </div>
                     <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                 </div>
                 <br>
-                <div class="flex-container">
+                <div class="flex-container" id='haas'>
                     <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                     <div class="flex-item text" align='center' id='text4' style="font-size:1.25vw;">
-                        Haas F1 Team debuted in the FIA Formula One World Championship in 2016, becoming the first American-led Formula One team since 1986. Founded by industrialist Gene Haas, Haas F1 Team is based in the United States on the same Kannapolis, North Carolina,
-                        campus as his championship-winning NASCAR team, Stewart-Haas Racing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet volutpat consequat mauris
-                        nunc congue. Neque viverra justo nec ultrices. In est ante in nibh. Blandit turpis cursus in hac habitasse. Arcu risus quis varius quam quisque. Amet mattis vulputate enim nulla aliquet. Amet risus nullam eget felis eget nunc lobortis
-                        mattis. Amet nisl suscipit adipiscing bibendum est. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin. Euismod nisi porta lorem mollis aliquam.
-                        Faucibus turpis in eu mi bibendum.</div>
+                        <span style='color:rgb(141, 90, 32)'>Haas F1 Team</span> debuted in the FIA Formula One World Championship in 2016, becoming the first American-led Formula One team since 1986. Founded by industrialist Gene Haas, Haas F1 Team is
+                        based in the United States on the same Kannapolis, North Carolina, campus as his championship-winning NASCAR team, Stewart-Haas Racing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Sit amet volutpat consequat mauris nunc congue. Neque viverra justo nec ultrices. In est ante in nibh. Blandit turpis cursus in hac habitasse. Arcu risus quis varius quam quisque. Amet mattis vulputate
+                        enim nulla aliquet. Amet risus nullam eget felis eget nunc lobortis mattis. Amet nisl suscipit adipiscing bibendum est. Egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Massa tincidunt nunc pulvinar sapien et ligula
+                        ullamcorper malesuada proin. Euismod nisi porta lorem mollis aliquam. Faucibus turpis in eu mi bibendum.</div>
                     <div class="flex-item"><img src='./images/Teams/hassf1.jpg' id='teams' /></div>
                     <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                 </div>
                 <br>
-                <div class="flex-container">
+                <div class="flex-container" id='renault'>
                     <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                     <div class="flex-item"><img src='./images/Teams/renaultf1.jpg' id='teams' /></div>
                     <div class="flex-item text" align='center' id='text5' style="font-size:1.25vw;">
@@ -191,18 +188,18 @@
 
                 </div>
                 <br>
-                <div class="flex-container">
+                <div class="flex-container" id='racingpoint'>
                     <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                     <div class="flex-item text" align='center' id='text6' style="font-size:1.25vw;">
-                        <span style='color:pink'>Racing Point F1 Team</span> was the team that Racing Point UK made a late entry into the 2018 Formula One World Championship with. The team used the constructor name "Force India", competed under a British
-                        licence and was based in Silverstone, United Kingdom. The team was formed in August 2018 when investors purchased the assets of Sahara Force India F1 team, which was operating under administration. The consortium of investors included
-                        André Desmarais, Jonathan Dudman, John D. Idol, John McCaw Jr., Michael de Picciotto and Silas Chou named Racing Point UK Ltd. and were led by Lawrence Stroll, the father of then-Williams F1 driver Lance Stroll. The team made its
-                        competitive debut at the 2018 Belgian Grand Prix. The team was renamed in February 2019 as Racing Point F1 Team.</div>
+                        <span style='color:rgb(255, 174, 187)'>Racing Point F1 Team</span> was the team that Racing Point UK made a late entry into the 2018 Formula One World Championship with. The team used the constructor name "Force India", competed
+                        under a British licence and was based in Silverstone, United Kingdom. The team was formed in August 2018 when investors purchased the assets of Sahara Force India F1 team, which was operating under administration. The consortium
+                        of investors included André Desmarais, Jonathan Dudman, John D. Idol, John McCaw Jr., Michael de Picciotto and Silas Chou named Racing Point UK Ltd. and were led by Lawrence Stroll, the father of then-Williams F1 driver Lance Stroll.
+                        The team made its competitive debut at the 2018 Belgian Grand Prix. The team was renamed in February 2019 as Racing Point F1 Team.</div>
                     <div class="flex-item"> <img src='./images/Teams/racingpointf1.jpg' id='teams' /></div>
                     <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                 </div>
                 <br>
-                <div class="flex-container">
+                <div class="flex-container" id='mclaren'>
                     <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                     <div class="flex-item"><img src='./images/Teams/mclarenf1.jpg' id='teams' /></div>
                     <div class="flex-item text" align='center' id='text7' style="font-size:1.25vw;">
@@ -214,7 +211,7 @@
                     <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                 </div>
                 <br>
-                <div class="flex-container">
+                <div class="flex-container" id='tororosso'>
                     <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                     <div class="flex-item text" align='center' id='text8' style="font-size:1.25vw;">
 
@@ -227,7 +224,7 @@
                     <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                 </div>
                 <br>
-                <div class="flex-container">
+                <div class="flex-container" id='alfaromeo'>
                     <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                     <div class="flex-item"><img src='./images/Teams/alfaromeof1.jpg' id='teams' /></div>
                     <div class="flex-item text" align='center' id='text9' style="font-size:1.25vw;"> <span style='color:darkred'>Alfa Romeo Racing</span>. Autodelta, Marlboro and Benetton Team Alfa Romeo (1979–1985). During 1977, and after some persuasion by Chiti, Alfa Romeo gave Autodelta permission to start developing a Formula
@@ -238,7 +235,7 @@
                     <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                 </div>
                 <br>
-                <div class="flex-container">
+                <div class="flex-container" id='williams'>
                     <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' height=300 width=250 /> </div>-->
                     <div class="flex-item text" align='center' id='text10' style="font-size:1.25vw;">
 
@@ -297,34 +294,32 @@
 </body>
 <footer>
     <nav>
-        <div class='nav'>
-            <div class='container'>
-                <ul align='center'>
-                    <a href='./index.html'>
-                        <li>Home</li>
-                        <a href='./currentseason.html' role="button">
-                            <li>Current Season</li>
-                        </a>
-                        <a href='./lastseason.html' role="button">
-                            <li>Last Season</li>
-                        </a>
-                        <div class="dropdown">
-                            <button class="dropbtn">Tyre Types
-                                    </button>
-                            <div class="dropdown-content">
-                                <a href="./tyrecompounds.html">Dry Tyre Types</a>
-                                <a href="./wettyres.html">Wet Tyre Types</a>
-                                <a href="./oldtyresystem.html">Old Tyre System</a>
-                            </div>
-                        </div>
-
-
-
-
-
-                </ul>
+        <div class="topnav" id="myTopnav" align='center'>
+            <a href="./index.html" class="active">Home</a>
+            <a href="./currentseason.html">Current Season</a>
+            <a href="./lastseason.html">Last Season</a>
+            <div class="dropdown">
+                <button class="dropbtn">Tyre Systems 
+                                    <i class="fa fa-caret-down"></i>
+                                  </button>
+                <div class="dropdown-content">
+                    <a href="./tyrecompounds.html">2019 Tyre System</a>
+                    <a href="./wettyres.html">Wet Weather Tyres</a>
+                    <a href="./oldtyresystem.html">2018 Tyre System</a>
+                </div>
             </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
     </nav>
 </footer>
 

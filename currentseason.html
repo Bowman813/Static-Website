@@ -25,30 +25,32 @@
             document.getElementById("subtitle").innerHTML = "Drivers Standings and Constructors Standings plus honorable moments for the current season (2019)";
         </script>
         <nav>
-            <div class='nav'>
-                <div class='container'>
-                    <ul align='center'>
-                        <a href='./index.html'>
-                            <li>Home</li>
-                            <a href='./currentseason.html' role="button">
-                                <li>Current Season</li>
-                            </a>
-                            <a href='./lastseason.html' role="button">
-                                <li>Last Season</li>
-                            </a>
-
-                            <div class="dropdown">
-                                <button class="dropbtn">Tyre Types
-                                    </button>
-                                <div class="dropdown-content">
-                                    <a href="./tyrecompounds.html">Dry Tyre Types</a>
-                                    <a href="./wettyres.html">Wet Tyre Types</a>
-                                    <a href="./oldtyresystem.html">Old Tyre System</a>
-                                </div>
-                            </div>
-                    </ul>
+            <div class="topnav" id="myTopnav" align='center'>
+                <a href="./index.html" class="active">Home</a>
+                <a href="./currentseason.html">Current Season</a>
+                <a href="./lastseason.html">Last Season</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Tyre Systems 
+                                    <i class="fa fa-caret-down"></i>
+                                  </button>
+                    <div class="dropdown-content">
+                        <a href="./tyrecompounds.html">2019 Tyre System</a>
+                        <a href="./wettyres.html">Wet Weather Tyres</a>
+                        <a href="./oldtyresystem.html">2018 Tyre System</a>
+                    </div>
                 </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
             </div>
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+            </script>
         </nav>
         <button onclick="day_mode()">  
                 Day Mode 
@@ -59,7 +61,7 @@
             }
 
             function day_mode() {
-                changeColor('white');
+                changeColor('lightgray');
                 document.getElementById("title").style.color = "black";
                 document.getElementById("subtitle").style.color = "black";
                 document.getElementById("text").style.color = "black";
@@ -94,7 +96,7 @@
 
     </div>
     <div class='flex-container'>
-        <h2 id='drivers_standings' style="font-size:1.45vw;">Current 2019 World Drivers Championship Standings</h2>
+        <h2 id='drivers_standings' style="font-size:1.45vw;" align='center'>Current 2019 World Drivers Championship Standings</h2>
     </div>
     <div class='flex-container'>
 
@@ -102,7 +104,7 @@
 
     </div>
     <div class='flex-container'>
-        <h2 id='constructors_standings' style="font-size:1.45vw;">Current 2019 World Constructors Championship Standings</h2>
+        <h2 id='constructors_standings' style="font-size:1.45vw;" align='center'>Current 2019 World Constructors Championship Standings</h2>
     </div>
     <div class='flex-container'>
 
@@ -111,10 +113,10 @@
     </div>
     <hr>
     <div class='flex-container'>
-        <h2 id='honorable_mentions' style="font-size:1.45vw;">Honorable mentions throughout the season so far</h2>
+        <h2 id='honorable_mentions' style="font-size:1.45vw;" align='center'>Honorable mentions throughout the season so far</h2>
     </div>
     <div class='flex-container'>
-        <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' width=500 height=1000 /></div>
+        <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' width=500 height=1000 /></div>-->
         <div class='flex-item honorable-mentions text' id='text' style="font-size:1.25vw;">
             During the winter break after the final race of 2018, Valtteri Bottas came under a lot of flack for poor performances and failing to get a win for the entire season meanwhile his team mate won the championship. At the first race of the season he silenced
             them all after putting in a solid performance and getting his first win in over a year and was quoted on his team radio saying 'to who it may concern f*** you'.<br>
@@ -144,11 +146,12 @@
             after a high speed collision on track. The following F2 race was cancelled and the F3 and F1 races where filled with tributes to the young french man. All cars raced with a sticker saying 'Racing for Antoine' on the side. Charles Leclerc,
             who was a close friend of Antoine, won the F1 race and dedicated his first win and his dream come true to his friend.<br>
             <br>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/-ISyWVEjUNE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+            <div class='video-container'><iframe width="560" height="315" src="https://www.youtube.com/embed/-ISyWVEjUNE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><br>
             <br> The Italian Grand Prix followed and with the Scuderia without a home win since 2006, 2019 looked to be their year following a shambollic ending to the final qualifying session put Charles Leclerc on pole. Besides immense pressure from
             Lewis Hamilton and Valterri Bottas once Lewis locked up and was forced to take an exit road, Charles Leclerc put himself in the history books and all the hearts of the Tifosi with his second victory of his career.
         </div>
-        <div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' width=500 height=1000 /></div>
+        <br>
+        <!--<div class='flex-item'><img src='./images/950x350-white-solid-color-background.jpg' width=500 height=1000 /></div>-->
     </div>
 
 
@@ -159,30 +162,32 @@
 </body>
 <footer>
     <nav>
-        <div class='nav'>
-            <div class='container'>
-                <ul align='center'>
-                    <a href='./index.html'>
-                        <li>Home</li>
-                    </a>
-                    <a href='./currentseason.html' role="button">
-                        <li>Current Season</li>
-                    </a>
-                    <a href='./lastseason.html' role="button">
-                        <li>Last Season</li>
-                    </a>
-                    <div class="dropdown">
-                        <button class="dropbtn">Tyre Types
-                                        </button>
-                        <div class="dropdown-content">
-                            <a href="./tyrecompounds.html">Dry Tyre Types</a>
-                            <a href="./wettyres.html">Wet Tyre Types</a>
-                            <a href="./oldtyresystem.html">Old Tyre System</a>
-                        </div>
-                    </div>
-                </ul>
+        <div class="topnav" id="myTopnav" align='center'>
+            <a href="./index.html" class="active">Home</a>
+            <a href="./currentseason.html">Current Season</a>
+            <a href="./lastseason.html">Last Season</a>
+            <div class="dropdown">
+                <button class="dropbtn">Tyre Systems 
+                                    <i class="fa fa-caret-down"></i>
+                                  </button>
+                <div class="dropdown-content">
+                    <a href="./tyrecompounds.html">2019 Tyre System</a>
+                    <a href="./wettyres.html">Wet Weather Tyres</a>
+                    <a href="./oldtyresystem.html">2018 Tyre System</a>
+                </div>
             </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
     </nav>
 </footer>
 
