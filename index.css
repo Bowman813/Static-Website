@@ -129,50 +129,6 @@ body {
 }
 
 
-/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child),
-    .dropdown .dropbtn {
-        display: none;
-    }
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-}
-
-
-/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-
-@media screen and (max-width: 600px) {
-    .topnav.responsive {
-        position: relative;
-    }
-    .topnav.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
-    .topnav.responsive .dropdown {
-        float: none;
-    }
-    .topnav.responsive .dropdown-content {
-        position: relative;
-    }
-    .topnav.responsive .dropdown .dropbtn {
-        display: block;
-        width: 100%;
-        text-align: left;
-    }
-}
-
-
 /*------------------------------------------------------------------------------------------------------------*/
 
 button {
@@ -197,11 +153,6 @@ button {
 /*div {
     border: 2px solid blue;
 }*/
-
-.article-background {
-    background-image: url('');
-    background-repeat: no-repeat;
-}
 
 h3 {
     padding: 5px;
@@ -234,41 +185,41 @@ div .text {
 }
 
 #mercedes {
-    border: 5px solid cyan;
+    border: 10px solid cyan;
 }
 
 #ferrari {
-    border: 5px solid red;
+    border: 10px solid red;
 }
 
 #redbull {
-    border: 5px solid rgb(24, 24, 179);
+    border: 10px solid rgb(24, 24, 179);
 }
 
 #haas {
-    border: 5px solid rgb(141, 90, 32);
+    border: 10px solid rgb(141, 90, 32);
 }
 
 #renault {
-    border: 5px solid rgb(233, 233, 37);
+    border: 10px solid rgb(233, 233, 37);
 }
 
 #racingpoint {
-    border: 5px solid rgb(255, 174, 187);
+    border: 10px solid rgb(255, 174, 187);
 }
 
 #mclaren {
-    border: 5px solid orange;
+    border: 10px solid orange;
 }
 
 #tororosso {
-    border: 5px solid blue;
+    border: 10px solid blue;
 }
 
 #alfaromeo {
-    border: 5px solid darkred;
+    border: 10px solid darkred;
 }
 
 #williams {
-    border: 5px solid lightskyblue;
+    border: 10px solid lightskyblue;
 }
